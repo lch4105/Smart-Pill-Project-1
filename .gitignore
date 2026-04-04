@@ -1,0 +1,14 @@
+# 모든 데이터 폴더 내의 실제 파일들을 제외
+data/raw/**/images/*
+data/raw/**/labels/*
+data/interim/**/*
+data/processed/**/*
+data/augmented/**/*
+
+# 단, 폴더 구조 유지를 위한 .gitkeep 파일은 제외하지 않음
+!.gitkeep
+
+# 학습된 모델 파일 및 가상환경 제외
+models/*.pth
+.venv/
+__pycache__/
