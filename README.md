@@ -1,3 +1,22 @@
+### [가상환경 설정 (Conda)]
+
+### 0. VS Code를 '관리자 권한'으로 실행하기
+
+### 1. Conda 기존 환경 종료하기
+conda deactivate
+
+### 2. 프로젝트용 가상환경 만들기
+conda create -n smart_pill python=3.10.12 -y
+
+### 3. 환경 활성화하기
+conda activate smart_pill
+
+### 4. 필수 라이브러리 설치하기
+### (주의: requirements.txt 파일이 있는 디렉토리에서 실행)
+pip install -r requirements.txt
+
+---
+
 ## 📂 프로젝트 폴더 구조 (Project Structure)
 
 본 프로젝트는 대용량 AI 학습 데이터를 효율적으로 관리하기 위해 **MLOps 표준 구조**를 따릅니다.
